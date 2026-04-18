@@ -81,6 +81,8 @@ In the MSYS2 terminal, run:
 When prompted, type `Y` and press Enter.
 
 This will install the GCC compiler along with necessary libraries.
+<img width="922" height="1017" alt="image" src="https://github.com/user-attachments/assets/328072d0-af57-4bcb-a198-95b1455a7589" />
+
 
 ---
 
@@ -104,6 +106,8 @@ Steps:
 Open a new terminal (Command Prompt or PowerShell) and run:gcc --version
 
 If GCC is installed correctly, it will display the version information.
+<img width="868" height="164" alt="image" src="https://github.com/user-attachments/assets/6d338964-26f1-449c-8dc7-22ebe6f417ae" />
+
 
 ---
 
