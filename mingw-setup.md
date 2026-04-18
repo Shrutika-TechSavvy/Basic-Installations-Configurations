@@ -35,4 +35,91 @@ It works together with GCC and provides the required headers and libraries for W
 
 GCC (GNU Compiler Collection) is the compiler used to convert C source code into machine code.
 
-For example:
+For example:gcc hello.c -o hello.exe
+
+This command compiles the file `hello.c` and produces a Windows executable named `hello.exe`.
+
+---
+
+## 5. What is pacman?
+
+`pacman` is the package manager used in MSYS2. It is responsible for installing, updating, and managing software packages.
+
+Example:pacman -S mingw-w64-x86_64-gcc
+
+- `-S` means install
+- `mingw-w64-x86_64-gcc` is the GCC package for 64-bit systems
+
+---
+
+## 6. Installation Steps
+
+### Step 1: Download MSYS2
+
+Go to:
+https://www.msys2.org/
+
+Download the installer and install it using default settings.
+
+The default installation directory is:C:\msys64
+
+---
+
+### Step 2: Open the MSYS2 MinGW64 Terminal
+
+After installation, open the terminal named:MSYS2 MinGW64
+
+This environment is configured for building Windows applications.
+
+---
+
+### Step 3: Install GCC
+
+In the MSYS2 terminal, run:pacman -S mingw-w64-x86_64-gcc
+
+When prompted, type `Y` and press Enter.
+
+This will install the GCC compiler along with necessary libraries.
+
+---
+
+### Step 4: Add GCC to Environment Variables
+
+Windows needs to know where the compiler is located. This is done using the PATH environment variable.
+
+Steps:
+1. Open the Start menu and search for "Environment Variables"
+2. Click on "Edit the system environment variables"
+3. Click on "Environment Variables"
+4. Under "System variables", find and select `Path`
+5. Click "Edit"
+6. Click "New" and add:C:\msys64\mingw64\bin
+7. Click OK to save
+
+---
+
+### Step 5: Verify Installation
+
+Open a new terminal (Command Prompt or PowerShell) and run:gcc --version
+
+If GCC is installed correctly, it will display the version information.
+
+---
+
+### Step 6: Compile a Simple C Program
+
+Create a file named `hello.c`:
+
+```c
+#include <stdio.h>
+
+int main() {
+    printf("Hello World\n");
+    return 0;
+}
+```
+Compile the program:
+
+gcc hello.c -o hello.exe
+
+After compilation, a file named hello.exe will be generated.
