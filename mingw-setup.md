@@ -35,7 +35,7 @@ It works together with GCC and provides the required headers and libraries for W
 
 GCC (GNU Compiler Collection) is the compiler used to convert C source code into machine code.
 
-For example:gcc hello.c -o hello.exe
+For example: ```c gcc hello.c -o hello.exe```
 
 This command compiles the file `hello.c` and produces a Windows executable named `hello.exe`.
 
@@ -45,7 +45,7 @@ This command compiles the file `hello.c` and produces a Windows executable named
 
 `pacman` is the package manager used in MSYS2. It is responsible for installing, updating, and managing software packages.
 
-Example:pacman -S mingw-w64-x86_64-gcc
+Example: ```pacman -S mingw-w64-x86_64-gcc```
 
 - `-S` means install
 - `mingw-w64-x86_64-gcc` is the GCC package for 64-bit systems
@@ -75,7 +75,8 @@ This environment is configured for building Windows applications.
 
 ### Step 3: Install GCC
 
-In the MSYS2 terminal, run:pacman -S mingw-w64-x86_64-gcc
+In the MSYS2 terminal, run: 
+```pacman -S mingw-w64-x86_64-gcc```
 
 When prompted, type `Y` and press Enter.
 
@@ -93,7 +94,7 @@ Steps:
 3. Click on "Environment Variables"
 4. Under "System variables", find and select `Path`
 5. Click "Edit"
-6. Click "New" and add:C:\msys64\mingw64\bin
+6. Click "New" and add: ```C:\msys64\mingw64\bin```
 7. Click OK to save
 
 ---
